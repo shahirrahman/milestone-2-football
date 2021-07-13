@@ -1,0 +1,106 @@
+/*---------------
+---------------- */
+/* -----------
+Base styles
+------------- */
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+button{
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+/*---------------
+Navbar Styles
+---------------- */
+.header{
+    background-color: #2D25A0;
+    position: sticky;
+    width: 100%;
+    font-size: 16px;
+    height: 70px;
+    font-weight: 500;
+    display: flex;
+    padding: 40px 100px;
+    margin-bottom: 0;
+
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-links{
+    margin: 0px 30px;
+    padding: 0;
+    margin: 0;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    margin-right: 50px ;
+}
+.header-anchor{
+    margin-right: 0;
+}
+.header-button{
+    
+}
+
+/*---------------
+Section-1 Styles
+---------------- */
+.section1{
+    background-color: #2D25A0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 70px 40px;
+}
+.section1-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section1 h1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 62px;
+    color: white;
+}
+.section1-image{
+    margin-left: 100px;
+}
+.section1-image img{
+    width: 556.01px;
+}
+/*--------------------
+Section-2(Grid) Styles
+--------------------- */
+.container{
+    padding: 70px 14%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.card{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.card-image img{
+    width: 100%;
+}
+.card-details h1{
+    font-size: 28px;
+    font-weight: bold;
+}
