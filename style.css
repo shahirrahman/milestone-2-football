@@ -22,12 +22,14 @@ button:hover .fas{
     transform: rotate(360deg);
     transition: transform .8s ease ;
 }
+
 /*---------------
 Navbar Styles
 ---------------- */
 .header{
     background-color: #2D25A0;
     position: sticky;
+    top: 0;
     width: 100%;
     font-size: 16px;
     height: 70px;
@@ -40,7 +42,6 @@ Navbar Styles
 .header-nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
 }
 .nav-links{
@@ -53,9 +54,19 @@ Navbar Styles
     color: white;
     margin-right: 50px ;
 }
+.nav-link:hover{
+    color: #c4c4c4;
+}
 .header-anchor{
     margin-right: 0;
 }
+.bars-icon{
+    display: none;
+}
+.nav-button-div{
+    margin-left: auto;
+}
+
 
 /*---------------
 Section-1 Styles
@@ -86,9 +97,10 @@ Section-1 Styles
     width: 556.01px;
 }
 .img-section1:hover{
-    transform: scale(1.07);
+    transform: scale(1.08);
     transition: transform .5s ease ;
 }
+
 /*--------------------
 Section-2(Grid) Styles
 --------------------- */
@@ -109,10 +121,12 @@ Section-2(Grid) Styles
     font-size: 28px;
     font-weight: bold;
 }
+
 /* ------------------
-Section-3 starts here
+Section-3 styles
 ---------------------- */
 .section3{
+    margin-top: 55pxpx;
     background-color: rgba(255, 255, 255, 0);
 }
 .section3-text{
@@ -121,4 +135,111 @@ Section-3 starts here
 .section3-text h1{
     color: black;
     font-size: 48px;
+}
+/* ------------------
+Footer Styles
+---------------------*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;margin-bottom: 50px;
+}
+.footer-logo{
+    width: 400px;
+}
+.social-links{
+    margin-top: 25px;
+}
+.fab{
+    color: rgb(88, 87, 87);
+    margin: 0px 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: silver;
+    border-radius: 100%;
+}
+.fab:hover{
+    color: #2D25A0;
+}
+
+/* -------------------
+Media Queries Start
+--------------------- */
+
+/* ---------------
+Tablet media queries
+-----------------*/
+@media screen and (max-width: 992px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 1220px) {
+    .section1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section1-text h1{
+        font-size: 55px;
+    }
+    .section1-image{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .section1-image img{
+        width: 480px;
+    }
+    .section3-text{
+        width: 70%;
+    }
+    .section3-image img{
+        width: 70%;
+    }
+}
+
+/* ---------------------
+Mobile media Queries
+------------------------ */
+@media only screen and (max-width: 828px){
+    .nav-links{
+        display: none;
+    }
+    .bars-icon{
+        display: block;
+    }
+    .fa-bars{
+        color: white;
+        font-size: 25px;
+    }
+    .header{
+        padding: 20px;
+    }
+    .menu{
+        padding: 0px;
+        margin: 0px;
+    }
+}
+@media only screen and (max-width: 688px){
+    .section1{
+        padding: 70px 20px;
+    }
+    .section1-image img{
+        width: 100%;
+    }
+    .section1-text{  
+        width: 100%;
+    }
+    .section1-text h1{
+        font-size: 40px;
+    }
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 70px 15px;
+    }
+    .footer-logo{
+        width: 300px;
+    }
 }
