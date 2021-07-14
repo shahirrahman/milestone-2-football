@@ -97,8 +97,9 @@ Section-1 Styles
     width: 556.01px;
 }
 .img-section1:hover{
-    transform: scale(1.08);
+    transform: scale(1.08) ;
     transition: transform .5s ease ;
+    z-index: -3;
 }
 
 /*--------------------
@@ -165,6 +166,52 @@ Section-4 styles
 /* -------------------
 Section-5 styles
 ---------------------*/
+.section5{
+    margin-top: 80px;
+    padding: 30px 70px;
+}
+.match-container{
+    display: flex;
+    padding: 20px 60px;
+    padding-top: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.matches-part{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.title h1{
+    text-align: center;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.team-img img{
+    width: 140px;
+    border-radius: 5px;
+}
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.country-name h1{
+    margin-bottom: 0;
+    margin-top: 3px;
+    font-size: 20px;
+}
+.score-number{
+    font-size: 40px;
+}
 
 /* ------------------
 Footer Styles
@@ -188,10 +235,12 @@ Footer Styles
     padding: 10px;
     background-color: silver;
     border-radius: 100%;
+    
 }
 .fab:hover{
     color: #2D25A0;
     background-color: #cbc8f3;
+    transition: background-color,color .45s ease;
 }
 
 /* -------------------
@@ -204,6 +253,11 @@ Tablet media queries
 @media screen and (max-width: 992px){
     .container, .videos{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .match-container{
+        padding-right: 30px;
+        padding-left: 30px;
+        justify-content: space-between;
     }
 }
 @media only screen and (max-width: 1220px) {
@@ -281,5 +335,27 @@ Mobile media Queries
     }
     .footer-logo{
         width: 300px;
+    }
+    .section5{
+        padding: 15px;
+    }
+    .matches-part{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .match-container{
+        transform: scale(.6);
+        z-index: -1;
+    }
+    .score{
+        margin: 0 35px;
+    }
+}
+@media only screen and (max-width:393px){
+    .match-container{
+        transform: scale(.45);
     }
 }
