@@ -212,6 +212,14 @@ Section-5 styles
 .score-number{
     font-size: 40px;
 }
+.ticket-button{
+    display: flex;
+    justify-content: center;
+    
+}
+.ticket-button{
+    padding-bottom: 40px;
+}
 
 /* ------------------
 Footer Styles
@@ -343,6 +351,7 @@ Mobile media Queries
         width: 100%;
         padding: 0px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
