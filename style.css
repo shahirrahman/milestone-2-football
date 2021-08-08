@@ -95,6 +95,9 @@ Section-1 Styles
 .section1-image img{
     width: 556.01px;
 }
+.img-section1{
+    transition: transform .5s ease ;
+}
 .img-section1:hover{
     transform: scale(1.08) ;
     transition: transform .5s ease ;
